@@ -1,0 +1,13 @@
+.app-cursor {
+    z-index: 999;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(119, 119, 119, 0.61);
+    pointer-events: none;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    position: fixed;
+    transition-duration: 276ms;
+    transition-timing-function: ease-out;
+}
