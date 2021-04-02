@@ -14,7 +14,7 @@ const CustomCursor = () => {
         })
     }, [])
     return (
-        <div className="app-cursor" ref={cursorRef} />
+        <div className="app-cursor" ref={cursorRef}/>
     )
 }
 

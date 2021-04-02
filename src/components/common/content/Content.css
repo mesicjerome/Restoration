@@ -1,0 +1,10 @@
+
+.saturne-box {
+    display: flex;
+    justify-content: center;
+}
+
+.saturne {
+    width: 260px;
+    height: auto;
+}
