@@ -1,0 +1,108 @@
+.content {
+    width: 100%;
+    margin: 0 auto;
+  }
+/*FIRST SECTION*/
+.first-section {
+    padding-bottom: 2em;
+}
+.intro {
+    display: -webkit-flex;
+    display: flex;
+}
+.first-letter {
+    font-size: 2.5em;
+}
+.initial {
+    -webkit-flex: initial;
+            flex: initial;
+    width: 600px;
+    min-width: 100px;
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin: 1em 2em;
+  }
+/*Saturne image*/
+.saturne {
+    width: 260px;
+    height: auto;
+}
+
+/* Under 678px screen */
+@media screen and (max-width: 678px) {
+    .initial {
+        font-size:0.8em;
+    }
+    .saturne {
+        width: 180px;
+        height: auto;
+    }
+}
+/* Under 420px screen */
+@media screen and (max-width: 420px) {
+    .saturne {
+        width: 140px;
+        height: auto;
+    }
+}
+
+/*SECOND SECTION*/
+
+.second-section-text {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+.second-images-box {
+    display: flex;
+    justify-content: center;
+}
+ /*images before and after*/
+ .before{
+     width: 34em;
+     height: auto;
+ }
+ .after{
+    width: 34em;
+    height: auto;
+}
+
+/* Under 1095px screen */
+@media screen and (max-width: 1095px) {
+    .before {
+        width: 20em;
+        height: auto;
+    }
+    .after {
+        width: 20em;
+        height: auto;
+    }
+}
+/* Under 678px screen */
+@media screen and (max-width: 678px) {
+    .second-text {
+        font-size: 0.8em;
+    }
+    .before {
+        width: 16em;
+        height: auto;
+    }
+    .after {
+        width: 16em;
+        height: auto;
+    }
+}
+/* Under 519px screen */
+@media screen and (max-width: 519px) {
+    .second-images-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .before {
+        width: 20em;
+        height: auto;
+    }
+    .after {
+        width: 20em;
+        height: auto;
+    }
+}

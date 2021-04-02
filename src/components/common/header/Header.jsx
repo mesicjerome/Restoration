@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar } from '../../common';
 
-import './Header.css';
+import './Header.scss';
 import '../../../fonts/Quetry/QuetrySerif.ttf'
 
 function Header() {

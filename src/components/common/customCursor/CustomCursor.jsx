@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./CustomCursor.css";
+import "./CustomCursor.scss";
 
 const CustomCursor = () => {
     const cursorRef = React.useRef(null);
