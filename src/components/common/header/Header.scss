@@ -1,0 +1,59 @@
+/*  the logo font */
+@font-face {
+    font-family: "QuetrySerif";
+    src: local("QuetrySerif"),
+     url('../../../fonts/Quetry/QuetrySerif.ttf') format("truetype");
+   }
+
+.header {
+    margin-top: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 1em 1.4em;
+  }
+@media screen and (max-width: 678px) {
+    .header {
+        margin: 0.6em 1em;
+    }
+}
+  
+  .header-top {
+    display: flex;
+    width: 100%;
+    height: -0.6em;
+  }
+  
+  .header-top_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2em;
+  }
+  
+  .header-logo {
+    color: inherit;
+    text-decoration: inherit;
+    font-family: QuetrySerif;
+    font-size: 86px;
+  }
+  @media screen and (max-width: 678px) {
+    .header-logo {
+        font-size: 50px;
+    }
+}
+  
+  .header-top_navbar {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  .header-top_navigation {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin-right: 5px;
+  }
+  
