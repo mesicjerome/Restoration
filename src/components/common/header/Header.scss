@@ -1,49 +1,27 @@
 /*  the logo font */
 @font-face {
-    font-family: "QuetrySerif";
-    src: local("QuetrySerif"),
-     url('../../../fonts/Quetry/QuetrySerif.ttf') format("truetype");
+    font-family: "Gyahegi";
+    src: local("Gyahegi"),
+     url('../../../fonts/gyahegi-font/Gyahegi.ttf') format("truetype");
    }
 
 .header {
     margin-top: 20px;
     display: flex;
     flex: 1;
-    flex-direction: column;
+    flex-direction: row;
     margin: 1em 1.4em;
-  }
-@media screen and (max-width: 678px) {
-    .header {
-        margin: 0.6em 1em;
-    }
-}
-  
-  .header-top {
-    display: flex;
-    width: 100%;
-    height: -0.6em;
-  }
-  
-  .header-top_logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2em;
+    font-family: Gyahegi;
   }
   
   .header-logo {
     color: inherit;
     text-decoration: inherit;
-    font-family: QuetrySerif;
-    font-size: 86px;
+    font-size: 50px;
   }
-  @media screen and (max-width: 678px) {
-    .header-logo {
-        font-size: 50px;
-    }
-}
+ 
   
-  .header-top_navbar {
+  .navbar {
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -57,3 +35,32 @@
     margin-right: 5px;
   }
   
+  .navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+    color: inherit;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    outline: none;
+  }
+
+  /* Under 519px screen */
+@media screen and (max-width: 900px) {
+  .header-logo {
+    font-size: 1em;
+  }
+  .navbar-item{
+    font-size: 0.70em;
+  }
+}
+/* Under 519px screen */
+@media screen and (max-width: 519px) {
+  .header-logo {
+    font-size: 0.88em;
+  }
+  .navbar-item{
+    font-size: 0.45em;
+  }
+}

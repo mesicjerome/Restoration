@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { Content, Header } from "./components/common";
 import { CustomCursor } from './components/common';
 

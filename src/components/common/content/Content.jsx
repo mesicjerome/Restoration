@@ -2,7 +2,6 @@ import React from "react";
 import gsap from "gsap";
 
 /* IMAGES */
-import Saturne from "../../../img/saturne.jpg";
 import FirstBefore from "../../../img/11before.png";
 import FirstAfter from "../../../img/11after.png";
 import SecondBefore from "../../../img/10before.jpeg";
@@ -10,12 +9,26 @@ import SecondAfter from "../../../img/10after.jpeg";
 
 import "./Content.scss";
 
-gsap.fromTo(".initial", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 2});
-gsap.fromTo(".saturne", {opacity: 0, x: 200}, {opacity: 1, x: 0, duration: 2});
+gsap.fromTo(
+  ".initial",
+  { opacity: 0, x: -20 },
+  { opacity: 1, x: 0, duration: 2 }
+);
 
 function Content() {
   return (
     <section className="content">
+      {/* TEXT INTRO */}
+      <div className="text-intro-container">
+        <p className="text-intro">
+          FINE
+          <br />
+          ART
+          <br />
+          RESTORATION
+        </p>
+      </div>
+      {/* FIRST SECTION */}
       <section className="first-section">
         <div className="intro">
           <p className="initial">
@@ -33,10 +46,9 @@ function Content() {
             noninvasive, all of the work we do is fully reversible and in
             accordance with the AIC Code of Ethics
           </p>
-          <img src={Saturne} className="saturne" alt="saturne" />
         </div>
       </section>
-
+      {/* sSECOND SECTION */}
       <section className="second-section">
         <p className="second-section-text">
           <span className="first-letter">H</span>ere you can take a look on few
@@ -59,7 +71,8 @@ function Content() {
         <br />
         <br />
         <p className="second-section-text">
-        We put our passion and our expertise at your service, our mission is to preserve and make these Masterpieces last as long as possible.
+          We put our passion and our expertise at your service, our mission is
+          to preserve and make these Masterpieces last as long as possible.
         </p>
       </section>
     </section>

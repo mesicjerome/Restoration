@@ -1,23 +1,17 @@
 import React from "react";
-import { Navbar } from '../../common';
 
 import './Header.scss';
-import '../../../fonts/Quetry/QuetrySerif.ttf'
 
 function Header() {
   return (
     <section className="header">
-      <section className="header-top">
-        <section className="header-top_logo">
           <a href="/" className="header-logo">
-            Baumgartner
+            BAUMGARTNER
           </a>
+          <section className="navbar">
+            <a href="/" className="navbar-item">Home</a>
+            <a href="/Contact" className="navbar-item">Contact</a>
         </section>
-        <section className="header-top_navbar">
-          <Navbar /> 
-        </section>
-
-      </section>
     </section>
   )
 }

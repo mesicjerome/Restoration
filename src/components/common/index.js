@@ -1,13 +1,10 @@
 import CustomCursor from './customCursor';
-import Header from './header';
-import Navbar from './navbar';
 import Content from './content';
+import Header from './header';
 
 export {
     CustomCursor,
     Header,
-    Navbar,
     Content,
-
 
 }
